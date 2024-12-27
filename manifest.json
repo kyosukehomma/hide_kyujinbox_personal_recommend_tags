@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hide Kyujinbox Personal Recommend Tags",
+  "version": "1.0",
+  "description": "Hides elements with IDs starting with 'personal-recommend-'.",
+  "permissions": [],
+  "host_permissions": ["https://xn--pckua2a7gp15o89zb.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://xn--pckua2a7gp15o89zb.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
